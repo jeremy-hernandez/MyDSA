@@ -1,0 +1,21 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "type": "module",
+  "private": "true",
+  "scripts": {
+    "start": "node ./src/main.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  },
+  "imports": {
+    "#algs/*": "./src/algorithms/*.js",
+    "#dss/*": "./src/datastructures/*.js",
+    "#src/*": "./src/*.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}

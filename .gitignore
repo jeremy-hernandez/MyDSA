@@ -1,0 +1,17 @@
+node_modules
+
+# python ignoring
+Python/venv
+Python/.venv
+
+.pytest_cache
+__pycache__
+
+# random file that got generated for some reason
+.DS_Store
+
+# vscode ignoring
+.vscode
+
+# Java ignoring
+Java/classes
