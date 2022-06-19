@@ -1,8 +1,7 @@
 import { InvalidArgumentException } from '#src/misc/Exceptions';
+import chalk from 'chalk';
 
-export { DynamicArray };
-
-class DynamicArray {
+export default class DynamicArray {
   #CAPACITY;
   #LIST;
 
@@ -115,6 +114,17 @@ class DynamicArray {
 
   isEmpty() {
     return this.size === 0;
+  }
+
+  toString() {
+    let out = '';
+
+    for (let i of this) {
+      if (out) out += ',';
+      out += chalk.greenBright(i);
+    }
+
+    return (out = `[${out}]`);
   }
 
   /** Iterators */

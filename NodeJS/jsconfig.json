@@ -2,10 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "checkJs": false,
+    "rootDir": "./",
     "paths": {
-      "#algs/*": ["./algorithms/*"],
-      "#dss/*": ["./datastructures/*"],
-      "#src/*": ["./*"]
+      "#algs/*": ["./src/algs/*"],
+      "#collections": ["./src/collections/index.js"],
+      "#src/*": ["./src/*"]
     }
   },
   "exclude": ["node_modules"],
