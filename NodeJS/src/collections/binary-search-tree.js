@@ -1,4 +1,4 @@
-import { InvalidArgumentException } from '#src/misc/Exceptions';
+import { InvalidArgumentException } from '#src/errors/index.js';
 
 export { BinarySearchTree };
 

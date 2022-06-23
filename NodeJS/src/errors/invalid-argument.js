@@ -1,6 +1,4 @@
-export { InvalidArgumentException };
-
-class InvalidArgumentException extends Error {
+export default class InvalidArgumentException extends Error {
   constructor(message, arg = '') {
     super(message);
     this.name = 'InvalidArgumentException';
